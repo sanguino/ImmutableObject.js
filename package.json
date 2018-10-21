@@ -1,0 +1,36 @@
+{
+  "name": "immutablestore",
+  "version": "1.0.0",
+  "description": "Immutable native objects to use in store. The store gets a object with data object and two methods, lock and unlock. You could use reductors to change the data, unlocking the object before the modification and then locking it and returning data protected object.",
+  "main": "Immutable.js",
+  "scripts": {
+    "standard": "standard",
+    "test": "nyc mocha",
+    "coverage": "nyc --reporter=lcov --reporter=text npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanguino/ImmutableStore.git"
+  },
+  "keywords": [
+    "immutable",
+    "js",
+    "store",
+    "redux"
+  ],
+  "devDependencies": {
+    "chai": "4.2.0",
+    "dirty-chai": "2.0.1",
+    "mocha": "5.2.0",
+    "nyc": "13.1.0",
+    "sinon": "7.0.0",
+    "sinon-chai": "3.2.0",
+    "standard": "12.0.1"
+  },
+  "author": "Miguel G. Sanguino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanguino/ImmutableStore/issues"
+  },
+  "homepage": "https://github.com/sanguino/ImmutableStore#readme"
+}
