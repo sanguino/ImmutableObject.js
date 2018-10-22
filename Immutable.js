@@ -5,7 +5,7 @@ function Immutable (source = {}) {
     get (target, key) {
       return target[key]
     },
-    set: function immutableInterceptor (target, key, value) {
+    set (target, key, value) {
       if (!writable) {
         throw new Error('Object protected, you couldn\'t set data')
       }
