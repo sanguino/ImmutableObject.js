@@ -1,5 +1,8 @@
 # ImmutableStore
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+
 ImmutableStore package let you lock any object to prevent to modify it in any way. Other immutable packages uses 'get' and 'set' and other functions to do that. So anyone needs to learn how to modify the object, but ImmutableStore use native objects, so you access and modify it in a natural way. 
  
 When ImmutableStore is constructed it returns an object with 3 keys: data (proxied object) and lock/unlock functions.
