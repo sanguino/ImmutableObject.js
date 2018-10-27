@@ -1,6 +1,3 @@
-ProxyPolyFill = function (source) { return source }
-Proxy = typeof Proxy !== 'undefined' ? Proxy : ProxyPolyFill
-
 function Immutable (source = {}, initLocked = true) {
   let writable = true
   const validator = {
@@ -42,7 +39,6 @@ function Immutable (source = {}, initLocked = true) {
     data[key] = val
   }
   writable = !initLocked
-
   return new Proxy({
     data: data,
     lock: () => { writable = false },
