@@ -19,4 +19,5 @@ addons:
 script:
 - npm run standard
 - npm test
+- npm run coverage
 - sonar-scanner
