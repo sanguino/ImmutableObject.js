@@ -24,7 +24,11 @@ describe('Tests for ProxyPolyfill.js', function () {
 
   describe('when a browser implement Proxy class', function () {
     it('should do nothing', function () {
+      new ProxyPolyfill()
       expect(Proxy).to.be.an('function')
+      const data = {num: 1}
+      const dataCreated = new Proxy(data, {})
+      expect(data).to.not.be.equal(dataCreated)
     })
   })
 })
