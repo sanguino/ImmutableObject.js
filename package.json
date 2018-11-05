@@ -20,7 +20,7 @@
   ],
   "standard": {
     "ignore": [
-      "ProxyPolyfill.js"
+      "./ProxyPolyfill.js"
     ]
   },
   "devDependencies": {
